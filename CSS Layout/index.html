@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New CSS Layout</title>
+    <style>
+        #header{
+            height: 50px;
+            background-color: grey;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #navigation{
+            height: 35px;
+            background-color: grey;
+            line-height: 35px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .content{
+            height: 150px;
+            width: 20%;
+            background-color: grey;
+            line-height: 150px;
+            text-align: center;
+        }
+        #main-content{
+            height: 150px;
+            width: 60%;
+            background-color: grey;
+            line-height: 150px;
+            text-align: center;
+            margin: 0 10px;
+        }
+        #main{
+            display: flex;
+        }
+        #footer{
+            margin-top: 10px;
+            height: 25px;
+            background-color: grey;
+            line-height: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header</div>
+    <div id="navigation">Navigation</div>
+    <section id="main">
+        <div class="content">Content</div>
+        <div id="main-content">Main Content</div>
+        <div class="content">Content</div>
+    </section>
+    <div id="footer">Footer</div>
+</body>
+</html>

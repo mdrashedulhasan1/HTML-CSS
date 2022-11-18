@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        section{
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:10px;
+        }
+       #header{
+        background-color: cornflowerblue;
+        grid-column: 1/-1;
+       }
+       #menu{
+        background-color: aquamarine;
+        grid-row: 2/4;
+       }
+       #main{
+        background-color: blueviolet;
+       }
+       #right{
+        background-color: deeppink;
+       }
+       #footer{
+        background-color: greenyellow;
+        grid-column: 2/4;
+       }
+       div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: black;
+       }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="header">Header</div>
+        <div id="menu">Menu</div>
+        <div id="main">Main</div>
+        <div id="right">Right</div>
+        <div id="footer">Footer</div>
+    </section>
+</body>
+
+</html>
