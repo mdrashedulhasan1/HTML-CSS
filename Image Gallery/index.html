@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        figure{
+            display: inline-block;
+            background-color: rgb(192, 216, 237);
+            padding: 15px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+        figure:nth-child(2n+1){
+            transform: rotate(12deg);
+        }
+        figure:nth-child(2n){
+            transform: rotate(-12deg);
+        }
+        figure:hover{
+            transform: scale(1.2);
+            transform: translate(15px);
+        }
+        figcaption{
+            font-size: 25px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <figure>
+        <img height="200px" width="200px" src="images/deer.jpg" alt="">
+        <figcaption>
+            Deer
+        </figcaption>
+    </figure>
+    <figure>
+        <img height="200px" width="200px" src="images/gold-fish.jpg" alt="">
+        <figcaption>
+            Gold Fish
+        </figcaption>
+    </figure>
+    <figure>
+        <img height="200px" width="200px" src="images/parrot.jpg" alt="">
+        <figcaption>
+            Parrot
+        </figcaption>
+    </figure>
+    <figure>
+        <img height="200px" width="200px" src="images/tiger.jpg" alt="">
+        <figcaption>
+            Tiger
+        </figcaption>
+    </figure>
+</body>
+</html>
