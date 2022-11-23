@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animation</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            animation: setAnimation 5s ease;
+        }
+        @keyframes setAnimation {
+            0%{margin-top: 100px; background-color: aqua;}
+            25%{margin-bottom: 100px; background-color: #ff5e00;}
+            50%{margin-right: 100px; background-color: hsl(320, 100%, 50%);}
+            75%{margin-left: 100px; background-color: hsl(117, 80%, 52%);}
+            100%{background-color: hsl(277, 86%, 48%);}
+
+        }
+    </style>
+</head>
+<body>
+    <div>Animation</div>
+</body>
+</html>
